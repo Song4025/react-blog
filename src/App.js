@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <div className="black-nav">
-        <h4 style={{fontSize: '20px'}}>React Blog</h4>
+        <h4 style={{fontSize: '20px'}}> React Blog </h4>
       </div>
 
       {/* <div className='list'>
@@ -57,7 +57,7 @@ function App() {
       {
         // if문은 html중간에 사용할 수 없음. 삼항연산자로 해야함
         // 사용법: 조건식? 참일때 실행 : 거짓일때 실행
-        modal == true ? <Modal color={'lightGrey'} 작명={title} /> : null
+        modal == true ? <Modal color={'lightGrey'} 작명={title} setTitle={setTitle} /> : null
         // 작명은 보통 오른쪽이름 그대로 갖다붙임 ex) title={title}
       }
 
@@ -93,7 +93,10 @@ function Modal(props){
         <p>날짜</p>
         <p>상세내용</p>
         <button onClick={()=>{
-          
+          // props로 받아온 텍스트가 변경되게 해주세요.
+          let copy = [...props.작명];
+          copy[0] = '변경된 제목!!';
+          props.setTitle(copy);
         }}>글수정</button>
       </div> 
     </>

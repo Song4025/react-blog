@@ -11,10 +11,9 @@
 
 .black-nav {
   display: flex;
-  background: linear-gradient(to right, rgb(252,249,151) 0%,rgb(221,255,232) 52%,rgb(147,208,255) 100%);
-  width: 100%;
-  color:rgb(255, 230, 87);
-  text-shadow:1px 1px 1px rgb(71, 71, 71);
+  background:black;
+  color:rgb(255, 255, 255);
+  text-shadow:1px 1px 1px rgb(95, 79, 91);
   padding-left: 20px;
 }
 
@@ -30,6 +29,19 @@ div {
 .like {
   cursor: pointer;
 }
+
+button {
+  margin: 5px;
+  height: 30px;
+  border-radius: 14px;
+  border: 1.5px solid rgb(92, 65, 99);
+  font-weight: bold;
+  background: #e2e2e2;
+  color: rgb(92, 65, 99);
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
 
 .App-logo {
   height: 40vmin;
