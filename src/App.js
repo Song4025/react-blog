@@ -56,7 +56,9 @@ function App() {
               }}>👍</span> {like[i]} </h4>
               <p>4월 17일 발행</p>
               <button onClick={()=>{
-                
+                let copy = [...title];
+                copy.splice(i, 1)
+                setTitle(copy)
               }}>삭제</button>
             </div>
           );
@@ -79,7 +81,6 @@ function App() {
       <div>
         <input type="text"  onChange={(e)=>{
           setAddText(e.target.value)
-          console.log(addText)
         }}></input>
         <button onClick={()=>{
           let copy = [...title];
