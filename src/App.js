@@ -117,6 +117,7 @@ function Modal(props){
         copy[0] = '변경된 제목!!';
         props.setTitle(copy);
       }}>글수정</button>
+    <h1>ddddd</h1>
     </div>
   )
 }
